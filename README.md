@@ -1,1 +1,93 @@
-[![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-c66648af7eb3fe8bc4f294546bfd86ef473780cde1dea487d3c4ff354943c9ae.svg)](https://classroom.github.com/online_ide?assignment_repo_id=9695090&assignment_repo_type=AssignmentRepo)
+# 日本將棋對弈程式
+
+
+## 程式介紹
+
+將棋是一種盛行於日本的象棋類遊戲，
+
+棋盤為9行9列的方格陣，直行為筋，橫列為段，棋子置於方格內。
+
+![Alt text](https://shogi.hk/Gameplay-of-Japanese-Chess-Shogi/files/japanese-chess-shogi-domain.png)
+
+## 
+
+將棋共有八種棋子：
+
+玉將（玉）、飛車（飛）、角行（角）、金將（金）、
+
+銀將（銀）、桂馬（桂）、香車（香）、步兵（步），
+
+八種棋子移動方式都不同。
+
+飛、角、銀、桂、香、步六種棋子在敵陣內移動一手後便會升變。
+
+升變棋子共有六種：
+
+龍王（龍）、龍馬（馬）、成銀、成桂、成香、成步，
+
+後四種棋子移動方法皆相同。
+
+當一方的玉將無路可走時即將死，遊戲結束。
+
+
+## 
+
+
+接下來將會利用C語言實現基本的將棋對弈程式，
+
+功能包含 **載入棋譜觀看歷史紀錄** 以及 **開啟新局進行對戰** 。
+
+
+
+## Usage
+
+1. 將Source code及Header files進行編譯
+
+```
+$ make
+
+```
+
+2. 載入棋譜，瀏覽舊局的對戰過程
+
+```
+./bin/Assignment_2 -l {name of the file}
+
+```
+3. 開啟新的一局對戰
+
+```
+./bin/Assignment_2 -n -s {name of the file} 
+
+```
+
+
+## 遊戲功能介紹
+
+### 1. 載入棋譜
+
+  + 功能1 -'b'鍵 : 退回上一手
+  
+  + 功能2 -'f'鍵 : 移動下一手 
+  
+  
+### 2. 開新局
+
+  + 功能1 - 's'鍵 : 儲存棋盤並結束遊戲
+  
+  + 功能2 - '0'鍵 : 悔棋，由前一位玩家移動棋子
+  
+  + 功能3 - 對戰 : 
+        
+        輸入第一組段與筋(要移動的棋子)
+        
+        輸入第二組段與筋(要移動棋子到達的位置)
+        
+  + 功能4 - 變棋 : 達到變棋條件時會詢問是否變棋
+
+
+## 參考資訊
+
+1. [介紹日本將棋的棋盤、擺法、走法、玩法及其他規則](https://shogi.hk/Gameplay-of-Japanese-Chess-Shogi/)
+
+2. [C語言tips: 帶顏色的輸出](https://www.796t.com/article.php?id=190246)
