@@ -1,0 +1,21 @@
+Enter the following command to run the executable file.
+
+A. Open Old Game
+
+./bin/Assignment_2 -l {name of the file}
+
+Press 'f'  if you want to check the next move.
+Press 'b' if you want to check last move.
+
+------------------------------------------------------------------------------
+B. Start a New Game
+
+./bin/Assignment_2 -n -s {name of the file} 
+
+1. Enter Dan and Suji of the chess you want to move. (e.g. '7 7').
+     If you want to regard, press '0'.
+     If you want to store the chess board,press 's' or 'S'.
+2. Enter Dan and Suji where you want the chess move to. (e.g. '7 6').
+     If you want to regard, press '0'.
+     If you want to store the chess board,press 's' or 'S'.
+3. Loop until checkmate.
